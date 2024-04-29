@@ -13,9 +13,10 @@ body{
     overflow-x: hidden;
 }
 .container{
+    z-index: 5;
     padding: 10px 10%;
     position: relative;
-    /* z-index: 5; */
+    
 }
 #header .container::before{
     content: '';
@@ -60,12 +61,9 @@ nav{
     /* position: fixed;
     left: 130px;
     right: 150px; */
-}
-
-.logo{
-    width: 300px; 
     /* z-index: 5; */
 }
+
 .logo h1{
     font-size: 25px;
 }
@@ -437,7 +435,7 @@ nav ul li a:hover::after{
 }
 #connect{
     background: linear-gradient(#080808, #7f00ff);
-    height: 50vh;
+    height: 58vh;
     position: relative;
 }
 #connect .sub-title{
@@ -477,10 +475,25 @@ nav ul li a:hover::after{
     margin: 20px;
 }
 .resume a{
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 20px;
-    background:white;
-    color: rad;
+}
+.btn{
+    background: white;
+    margin: 15px 0;
+    display: inline-block;
+    color: #6408c0;
+}
+.resume  i{
+    border-radius: 10px;
+    background: white;
+    color: #6408c0;
+    padding: 10px;
+}
+.copyright{
+    /* padding-top: 10px; */
+    width: 100%;
+    text-align: center;
 }
