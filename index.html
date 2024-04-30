@@ -15,14 +15,16 @@
                 <h1><span class="name">A</span>asritha<span class="name">T</span>adicherla</h1>
             </div>
             
-            <ul>
+            <ul id="sidemenu">
                 <!-- <li><a href="#">Home</a></li> -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#connect">Connect with me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="animation">
                 <div class="hello">
@@ -174,7 +176,7 @@
                 <div class="col1">
                     <div class="title">
                         <h4>SKIN-SAVIOUR</h4>
-                        <a href="https://radiat-glow-website.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Aasrithat/Skin-Saviour" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <div class="skills-used">
                         <ul>
@@ -216,14 +218,23 @@
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=aasrithathadicherla@gmail.com&su=Subject&body=Body%20Text" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
             </div>
             <div class="resume">
-                <a href="images/docs/Aasritha's Resume.pdf" target="_blank" class="btn">Resume</a>
-                <a href="images/docs/Aasritha's Resume.pdf" download ><i class="fa-solid fa-download"></i></a>
+                <a href="https://drive.google.com/file/d/136VIhCk4FojsVDdo5jmCAJpGnXi0M54i/view?usp=sharing" target="_blank" class="btn">Resume</a>
+                <!-- <a href="images/docs/Aasritha's Resume.pdf" download class="download"><i class="fa-solid fa-download"></i></a> -->
             </div>
             <div class="copyright">
-                <p>Copyright <i class="fa-regular fa-copyright"></i> Aasritha Tadicherla <i class="fa-solid fa-heart"></i> 2024. All rights reserved.</p>
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Aasritha Tadicherla <span><i class="fa-solid fa-heart"></i></span> 2024. All rights reserved.</p>
             </div> 
         </div>
     </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-220px"
+        }
+    </script>
 </body>
 </html>
 <!-- <img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/59734313/157189039-c09b3e38-9f42-42c0-ab54-14f1574190a7.gif" alt=""> -->
