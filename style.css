@@ -8,6 +8,9 @@ body{
     background: #080808;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 #header{
     width: 100%;
     overflow-x: hidden;
@@ -215,6 +218,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .tech-skill1 img{
     width: 120px;
@@ -275,21 +279,22 @@ nav ul li a:hover::after{
     box-shadow: 2px 2px 4px #7f00ff;
     transition: transform 1s ease;
 }
-.engineering:hover{
+.engineering:hover, .intermediate:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
-.college .detail1{
+.college .detail1, .college .detail2, .college .detail3{
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
-.detail1 img{
+.detail1 img, .detail2 img, .detail3 img{
     width: 50px;
     height: 50px;
     border-radius: 15px;
 }
-.detail1 ul li {
+.detail1 ul li, .detail2 ul li, .detail3 ul li {
     list-style: none;
     gap: 20px;
 }
@@ -304,38 +309,6 @@ nav ul li a:hover::after{
     border-radius: 20px;
     box-shadow: 2px 2px 4px #7f00ff;
     transition: transform 1s ease;
-}
-.intermediate:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.college .detail2{
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-}
-.detail2 img{
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-}
-.detail2 ul li {
-    list-style: none;
-    gap: 20px;
-}
-.college .detail3{
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-}
-.detail3 img{
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-}
-.detail3 ul li {
-    list-style: none;
-    gap: 20px;
 }
 .detail3 li b{
     font-size: 14px;
@@ -490,13 +463,6 @@ nav ul li a:hover::after{
     display: inline-block;
     color: #6408c0;
 }
-.resume  .download{
-    margin-left: 10px;
-    border-radius: 10px;
-    background: white;
-    color: #6408c0;
-    padding: 10px;
-}
 .copyright{
     /* padding-top: 10px; */
     width: 100%;
@@ -521,11 +487,13 @@ nav .fa-solid{
         position: absolute;
         width: 0;
         height: 0;
-        
+    }
+    .container{
+        padding: 0 40px;
     }
     .animation{
         width: 100%;
-        margin: 70% 0 50%;
+        margin: 70% 0 60%;
     }
     .animation .hello,.animation h1{
         font-size: 20px;
@@ -541,6 +509,12 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        /* right: 20%; */
+    }
+    @keyframes slide {
+        100%{
+           top: -130px;
+        }
     }
     nav ul{
         display: flex;
@@ -548,7 +522,7 @@ nav .fa-solid{
         background: #7f00ff;
         position: fixed;
         top: 0;
-        right: -220px;
+        right: -450px;
         overflow: hidden;
         width: 450px;
         height: 92vh;
@@ -569,10 +543,69 @@ nav .fa-solid{
     .row{
         flex-direction: column;
     }
+    .about-col1, .about-col2{
+        flex-basis: 100%;
+    }
     .about-col2 h1{
         font-size: 20px;
+        font-weight: 800;
     }
-    .about-col2 .about-container{
+    .about-col2 .about-container, #skills h2, .col1 .title h4, .title i, .col1 p{
         font-size: 15px;
+    }
+    .sub-title, #education h1{
+        font-size: 30px;
+    }
+    .tech-skill{
+        margin: 0;
+    }
+    .line,  .line.inter{
+        justify-content: right;
+        right: -13%;
+    }
+    .detail1 img, .detail2 img, .detail3 img{
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .college .detail1, .engineering .detail3{
+        gap: 10px;
+    }
+    .engineering, .intermediate {
+        margin: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .detail1 ul li,.detail2 ul li, .engineering .detail3 ul li{
+        font-size: 8px;
+    }
+    .grade{
+        font-size: 10px;
+    }
+    #project{
+        padding: 80px 0;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-used ul li{
+        font-size: 8px;
+        padding: 10px 20px;
+    }
+    #connect{
+        background: #6408c0;
+    }
+    #connect .sub-title{
+        font-size: 22px;
+        padding-top: 25%;
+    }
+    .custom-shape-divider-top-1714314720 svg{
+        width: calc(150% + 1.5px);
+        height: 80px;
+    }
+    .copyright{
+        font-size: 10px;
     }
     }
