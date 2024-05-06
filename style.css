@@ -576,7 +576,7 @@ nav .fa-solid{
         width: 100%;
         padding: 20px 0;
     }
-    .detail1 ul li,.detail2 ul li, .engineering .detail3 ul li{
+    .detail1 ul li,.detail2 ul li, .detail3 ul li{
         font-size: 8px;
     }
     .grade{
@@ -594,6 +594,7 @@ nav .fa-solid{
         font-size: 8px;
         padding: 10px 20px;
     }
+
     #connect{
         background: #6408c0;
     }
