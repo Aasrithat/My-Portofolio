@@ -223,7 +223,6 @@ nav ul li a:hover::after{
 .tech-skill1 img{
     width: 120px;
     height: 120px;
-    /* box-shadow: 1px 1px 3px #5a3580; */
     border-radius:20px ;
     padding: 10px;
     margin-bottom: 20px;
@@ -272,14 +271,14 @@ nav ul li a:hover::after{
     height: 200px;
     margin: 15px 0px;
 }
-.engineering{
+.engineering, .intermediate, .school{
     padding: 20px 15px;
     width: 45%;
     border-radius: 20px;
     box-shadow: 2px 2px 4px #7f00ff;
     transition: transform 1s ease;
 }
-.engineering:hover, .intermediate:hover{
+.engineering:hover, .intermediate:hover, .school:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -304,11 +303,6 @@ nav ul li a:hover::after{
 }
 .intermediate{
     margin-left: 55% ;
-    padding: 20px 15px;
-    width: 45%;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px #7f00ff;
-    transition: transform 1s ease;
 }
 .detail3 li b{
     font-size: 14px;
@@ -489,11 +483,11 @@ nav .fa-solid{
         height: 0;
     }
     .container{
-        padding: 0 40px;
+        padding: 20px 40px;
     }
     .animation{
         width: 100%;
-        margin: 70% 0 60%;
+        margin: 70% 0;
     }
     .animation .hello,.animation h1{
         font-size: 20px;
@@ -571,7 +565,7 @@ nav .fa-solid{
     .college .detail1, .engineering .detail3{
         gap: 10px;
     }
-    .engineering, .intermediate {
+    .engineering, .intermediate, .school {
         margin: 0;
         width: 100%;
         padding: 20px 0;
@@ -579,7 +573,11 @@ nav .fa-solid{
     .detail1 ul li,.detail2 ul li, .detail3 ul li{
         font-size: 8px;
     }
-    .grade{
+    .detail3 ul li b{
+        font-size: 7.5px;
+    }
+
+    .grade, .layer h4{
         font-size: 10px;
     }
     #project{
@@ -594,13 +592,16 @@ nav .fa-solid{
         font-size: 8px;
         padding: 10px 20px;
     }
-
+    .tech-skill1{
+        margin: 1rem;
+    }
     #connect{
         background: #6408c0;
+        height: 50vh;
     }
     #connect .sub-title{
         font-size: 22px;
-        padding-top: 25%;
+        padding-top: 0%;
     }
     .custom-shape-divider-top-1714314720 svg{
         width: calc(150% + 1.5px);
