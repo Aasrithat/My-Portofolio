@@ -31,6 +31,7 @@ html{
     top: -30%;
     background: linear-gradient(45deg, #7f00ff, #080808);
     animation: animate 6s infinite;
+    filter: drop-shadow(2px);
 }
 @keyframes animate {
     50%{
@@ -184,11 +185,19 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
+    /* background: url('images/textimg.png');
+    background-clip: text; */
     font-size: 60px;
     font-weight: 600;
     color: white;
     padding-top: 35px;
+    /* animation: move 1s infinite alternate; */
 }
+/* @keyframes move{
+    100%{
+        background-position-x: 100%;
+    }
+} */
 .about-container{
     padding-top: 10px;
     line-height: 25px;
@@ -306,6 +315,9 @@ nav ul li a:hover::after{
 }
 .detail3 li b{
     font-size: 14px;
+}
+.detail1 li span, .detail2 li span{
+    font-size: 12px;
 }
 /* project */
 #projects{
@@ -430,7 +442,7 @@ nav ul li a:hover::after{
 }
 
 .custom-shape-divider-top-1714314720 .shape-fill {
-    fill: #000000;
+    fill: #080808;
 }
 .icons{
     text-align: center;
@@ -496,8 +508,8 @@ nav .fa-solid{
         font-size: 20px;
         letter-spacing: 0px;
     }
-    .animation .developer ul li{
-        font-size: 18px;
+    .animation .developer ul .text{
+        font-size: 10px;
         top: -20%;
     }
     nav .fa-solid{
@@ -576,7 +588,9 @@ nav .fa-solid{
     .detail3 ul li b{
         font-size: 7.5px;
     }
-
+    .detail1 li span, .detail2 li span{
+        font-size: 8px;
+    }
     .grade, .layer h4{
         font-size: 10px;
     }
@@ -611,3 +625,17 @@ nav .fa-solid{
         font-size: 10px;
     }
     }
+
+@media (max-width : 350px){
+    .text li{
+        top: -15px;
+    }
+    @keyframes slide {
+        100%{
+           top: -150px;
+        }
+    }
+    .animation .developer .text li span, .animation .developer .static{
+        font-size: 15px;
+    }
+}
