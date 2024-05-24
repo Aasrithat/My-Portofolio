@@ -524,9 +524,12 @@ nav .fa-solid{
         font-size: 25px;
         /* right: 20%; */
     }
+    .text li{
+        top: -10px;
+    }
     @keyframes slide {
         100%{
-           top: -130px;
+           top: -95px;
         }
     }
     nav ul{
@@ -622,7 +625,7 @@ nav .fa-solid{
     }
     #connect .sub-title{
         font-size: 22px;
-        padding-top: 0%;
+        padding-top: 10%;
     }
     .custom-shape-divider-top-1714314720 svg{
         width: calc(150% + 1.5px);
