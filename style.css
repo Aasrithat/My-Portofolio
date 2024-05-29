@@ -268,7 +268,7 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 .line{
-    margin: 20px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
