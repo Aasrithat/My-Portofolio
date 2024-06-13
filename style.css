@@ -118,9 +118,29 @@ nav ul li a:hover::after{
 }
 .hello span{
     font-size: 33px;
-    /* background: linear-gradient(45deg, rgb(188, 145, 73), rgb(188, 174, 147));
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    animation: move 2s both; 
+    display: inline-block;
+}
+@keyframes move{
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 .animation .developer{
     margin-top: 10px;
@@ -192,19 +212,11 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    /* background: url('images/textimg.png');
-    background-clip: text; */
     font-size: 60px;
     font-weight: 600;
     color: white;
     padding-top: 35px;
-    /* animation: move 1s infinite alternate; */
 }
-/* @keyframes move{
-    100%{
-        background-position-x: 100%;
-    }
-} */
 .about-container{
     padding-top: 10px;
     line-height: 25px;
